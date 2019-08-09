@@ -1,0 +1,19 @@
+{
+  "name": "james_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesj228/James_Portfolio.git"
+  },
+  "author": "James",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesj228/James_Portfolio/issues"
+  },
+  "homepage": "https://github.com/jamesj228/James_Portfolio#readme"
+}
