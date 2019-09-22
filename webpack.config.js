@@ -1,13 +1,23 @@
-var path = require('path');
-var SRC_DIR = require('/client/src');
-var DIST_DIR = require('/client/dist');
-var uglifyPlugin = require('uglifyjs-webpack-plugin');
+const path = require('path');
+const SRC_DIR = require('/client/src');
+const DIST_DIR = require('/client/dist');
+const uglifyPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+  entry: path.resolve()
 	module: {
 		rules: [
 			{
-				test:
+				test: /\.m?js$/,
+        exclude: ["/node_modules/"],
+        use: [
+          {
+            loader:"babel-loader",
+            options: {
+              presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+          }
+        ]
 			}
 		]
 	}
